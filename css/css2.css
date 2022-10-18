@@ -1,0 +1,84 @@
+*{
+	font-family: segoe script;
+}
+
+
+
+body{
+  background-color: #ffd7004d;
+}
+
+
+
+
+.portfolio img{
+border-radius: 20%
+}
+
+.wrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 100px;
+  top: 15px;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width: 1050px;
+  height: 750px;
+  position: relative;
+  border-radius:  5px solid #00FF00;
+
+}
+.front, .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+  backface-visibility: hidden;
+  background-color: 	#90EE90;
+  border-radius: 20%
+
+ }
+.front img{
+  max-width: 100%;
+  min-width: 90%;
+  height: auto;
+  margin: 2em;
+
+}
+.back{
+  transform: rotateY(180deg);
+  padding: 50px;
+  text-align: center;
+
+}
+.card:hover .front {
+  transform: rotateY(180deg);
+ }
+.card:hover .back {
+  transform: rotateY(360deg);
+ }
+
+
+
+
+.thumb img {
+    border: 2px solid #55c5e9; /* Рамка вокруг фотографии */
+    padding: 15px; /* Расстояние от картинки до рамки */
+    background: #F0E68C; /* Цвет фона */
+    margin-right: 50px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+   }
+
+
